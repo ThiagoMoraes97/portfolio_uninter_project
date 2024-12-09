@@ -1,0 +1,381 @@
+.main_informations{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 131rem;
+  margin: 0 auto;
+}
+
+.informations{
+  margin-top: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.informations .social_links{
+  display: flex;
+  gap: 2rem;
+}
+
+.informations .social_links a{
+  cursor: pointer;
+  width: 61px;
+  height: 56px;
+  background: #C4C4C4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  place-items: center;
+}
+
+.informations .social_links a:hover{
+  background-color: #cdcdcd;;
+}
+
+.informations span{
+  color: #000;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
+}
+
+.informations h1{
+  color: #000;
+  font-family: Raleway;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.informations p{
+  margin-bottom: 6rem;
+  color: #909090;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 1.8rem;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.picture img{
+  width: 80%;
+  height: 80%;
+
+}
+
+#about_me{
+  padding: 4rem;
+  margin: 0 auto;
+  color: white;
+  background: linear-gradient(90deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+  width: 100%;
+}
+
+.about_me_info{
+  max-width: 131rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.about_me_info h2{
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5.561px;
+  margin-bottom: 2rem;
+}
+
+.about_me_info p{
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 138.682%;
+  margin-bottom: 2rem;
+}
+
+.about_me_info button{
+  width: 13rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background: #000;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+/*Página Sobre Mim*/	
+
+.about_me_information h1, .formation h1, .portfolio h1, .contact h1{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 127.9%; 
+  letter-spacing: 10.661px;
+
+
+  border: 8px solid #000;
+  max-width:40rem;
+  padding: 2rem;
+  margin: 2rem auto 12rem;
+}
+
+.personal_informations {
+  display: flex;
+  gap: 10rem;
+  max-width: 131rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding-inline: 2rem;
+}
+
+.personal_informations img{
+  width: 70rem;
+  height: 70rem;
+  border-radius: .5rem;
+}
+
+.personal_informations_text{
+  text-align: center;
+}
+
+.personal_informations_text h2{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 127.9%;
+  letter-spacing: 10.661px;
+  margin-bottom: 2rem;
+}
+
+.personal_informations_text p{
+  color: #000;
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 138.682%;
+  margin-bottom: 2rem;
+  text-align:justify;
+}
+
+/*Página Formação*/	
+
+.formation_information img{
+  width: 60rem;
+  height: 60rem;
+}
+
+
+.formation_information {
+  display: flex;
+  gap: 10rem;
+  max-width: 131rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding-inline: 2rem;
+}
+
+
+.formation_informations_text{
+  text-align: center;
+}
+
+.formation_informations_text h2{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 127.9%;
+  letter-spacing: 10.661px;
+  margin-bottom: 3rem;
+}
+
+.formation_informations_text p, 
+.formation_informations_text ul li{
+  color: #000;
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 138.682%;
+  margin-bottom: 2rem;
+  text-align:justify;
+}
+
+/*Página Portfólio*/
+
+.portfolio_wrapper{
+  display: flex;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  border: 5px solid #000;
+  border-radius: 2rem;
+}
+
+.portfolio_wrapper img{
+  width: 30rem;
+  height: 35rem;
+  border-right: 8px solid #000;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.portfolio_wrapper .portfolio_information{
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}	
+
+
+.portfolio_wrapper .portfolio_information h2{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 127.9%;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+.portfolio_wrapper .portfolio_information p{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 138.682%;
+  margin-bottom: 2rem;
+  text-align:justify;
+}
+.portfolio_wrapper .portfolio_information button{
+  width: 13rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background: #000;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.all_portfolios{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+/*Página Contato*/
+
+.contact_informations{
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.contact_informations img{
+  width: 60rem;
+  height: 60rem;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact_form input, .contact_form textarea{
+  width: 40rem;
+  border-left: 4px solid black; 
+  border-bottom: 4px solid black; 
+  border-right: none; 
+  border-top: none; 
+  outline: none;
+  padding: 1rem;
+  background: none;
+
+  color: black;
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.contact_form input::placeholder, .contact_form textarea::placeholder{
+  color: black;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+
+.contact_form textarea{
+  height: 10rem;
+  resize: none;
+}
+
+
+.contact_form button{ 
+  width: 20rem;
+  height: 4rem;
+  background: none;
+  color: black;
+  font-family: Raleway;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+
+  border-left: 4px solid black; 
+  border-bottom: none; 
+  border-right: 4px solid black; 
+  border-top: none; 
+}
+
+
+
+.contact_form form{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact h1{
+  margin-bottom: 5rem;
+}
+  

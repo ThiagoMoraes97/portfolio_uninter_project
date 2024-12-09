@@ -1,0 +1,42 @@
+footer{
+  text-align: center;
+  display: grid;
+  background-color: black;
+  color: white;
+  gap: 4rem;
+
+  & p {
+    margin-bottom: 3rem;
+  }
+}
+
+footer #back_to_top{
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  margin: 6rem auto 0;
+  background: none;
+  color: white;
+  align-items: center;
+  border: none;
+  gap: 1rem;
+
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.781px;
+  cursor: pointer;
+
+
+}
+
+footer .social_contacts{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  & a{
+    cursor: pointer;
+  }
+}
