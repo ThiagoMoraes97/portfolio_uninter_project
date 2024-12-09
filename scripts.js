@@ -32,7 +32,7 @@ contactButton.onclick = contactContent;
 
 // Função para carregar o conteúdo da página// Função que carrega o conteúdo da página inicial
 async function homeContent() {
-  const response = await fetchData("pages/home.html");
+  const response = await fetchData("home.html");
 
   pageContent.classList.remove("about_me", "formation", "portfolio", "contact");
 
@@ -46,7 +46,7 @@ async function homeContent() {
 
 // Função que carrega o conteúdo da página "Sobre mim"
 async function aboutMeContent() {
-  const response = await fetchData("pages/about_me.html");
+  const response = await fetchData("about_me.html");
 
   pageContent.classList.remove("home", "formation", "portfolio", "contact");
   pageContent.classList.add("about_me");
@@ -57,7 +57,7 @@ async function aboutMeContent() {
 
 // Função que carrega o conteúdo da página "Formação"
 async function formationContent() {
-  const response = await fetchData("pages/formation.html");
+  const response = await fetchData("formation.html");
 
   pageContent.classList.remove("home", "about_me", "portfolio", "contact");
   pageContent.classList.add("formation");
@@ -68,7 +68,7 @@ async function formationContent() {
 
 // Função que carrega o conteúdo da página "Portfólio"
 async function portfolioContent() {
-  const response = await fetchData("pages/portfolio.html");
+  const response = await fetchData("portfolio.html");
 
   pageContent.classList.remove("home", "about_me", "formation", "contact");
   pageContent.classList.add("portfolio");
@@ -79,7 +79,7 @@ async function portfolioContent() {
 
 // Função que carrega o conteúdo da página "Contato"
 async function contactContent() {
-  const response = await fetchData("pages/contact.html");
+  const response = await fetchData("contact.html");
 
   pageContent.classList.remove("home", "about_me", "formation", "portfolio");
   pageContent.classList.add("contact");
