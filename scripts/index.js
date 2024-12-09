@@ -1,3 +1,4 @@
+// Função que busca os dados dos arquivos HTML
 function fetchData(endpoint) {
   return fetch(endpoint)
     .then(response => {
@@ -8,41 +9,28 @@ function fetchData(endpoint) {
     });
 }
 
-
+// Seleção de botões na página com base em seus IDs
 const homeButton = document.getElementById("back_home_button");
-
 const aboutMeButton = document.getElementById("about_me_button");
-
 const formationButton = document.getElementById("formation_button");
-
 const portfolioButton = document.getElementById("portfolio_button");
-
 const contactButton = document.getElementById("contact_button");
-
 const knowMoreButton = document.getElementById("know_more");
 
+// Seleção do elemento de conteúdo da página
 const pageContent = document.querySelector(".page");
-
 const navContent = document.querySelector("nav");
-
 const mainContent = document.getElementById("main_content");
 
-
+// Atribuindo funções de evento aos botõess
 homeButton.onclick = homeContent;
-
-console.log(knowMoreButton)
-
 aboutMeButton.addEventListener("click", aboutMeContent);
 knowMoreButton.addEventListener("click", aboutMeContent);
-
 formationButton.onclick = formationContent;
-
 portfolioButton.onclick = portfolioContent;
-
 contactButton.onclick = contactContent;
 
-;
-
+// Função para carregar o conteúdo da página// Função que carrega o conteúdo da página inicial
 async function homeContent() {
   const response = await fetchData("../pages/home.html");
 
@@ -55,6 +43,8 @@ async function homeContent() {
   mainContent.innerHTML = response;
 };
 
+
+// Função que carrega o conteúdo da página "Sobre mim"
 async function aboutMeContent() {
   const response = await fetchData("../pages/about_me.html");
 
@@ -65,6 +55,7 @@ async function aboutMeContent() {
   mainContent.innerHTML = response;
 };
 
+// Função que carrega o conteúdo da página "Formação"
 async function formationContent() {
   const response = await fetchData("../pages/formation.html");
 
@@ -75,6 +66,7 @@ async function formationContent() {
   mainContent.innerHTML = response;
 }
 
+// Função que carrega o conteúdo da página "Portfólio"
 async function portfolioContent() {
   const response = await fetchData("../pages/portfolio.html");
 
@@ -85,6 +77,7 @@ async function portfolioContent() {
   mainContent.innerHTML = response;
 }
 
+// Função que carrega o conteúdo da página "Contato"
 async function contactContent() {
   const response = await fetchData("../pages/contact.html");
 
